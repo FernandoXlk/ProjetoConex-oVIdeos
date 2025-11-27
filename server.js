@@ -38,7 +38,7 @@ server.post("/videos", async (request, reply) => {
   await database.create({ title, description, duration });
 
 
-  return reply.status(201).send();
+  return reply.status(204).send();
 });
 
 
